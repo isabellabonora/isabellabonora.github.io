@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x:hidden ;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #ffffff;
+  position: fixed;
+  z-index:1;
+  border-bottom: 3px solid black;
+  padding: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 40px;
+  position: absolute;
+  display: inherit;
+  left: 13%;
+  top: 50%;
+  z-index: 100;
+  cursor: pointer;
+  transform: translate(-5%, -50%);
+  float: left;
+}
+
+.menu{
+  margin-left: 55%;
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #DFFFD6;
+  font-weight: bold;
+}
+
+.menu > li{
+  width: 100%;
+  display: inline;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 45px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Abril Fatface', sans-serif;
+}
+
+.main {
+background-color: #E8D7FF;
+width: 100%;
+height: 90vh;
+border-radius: 30px;
+}
+
+.headline {
+  width: 50%;
+  padding-left: 170px;
+  position: relative;
+  top: 200px;
+  float:left;
+}
+
+.image img {
+  width: 30%;
+  margin-right: 140px;
+  position: relative;
+  top: 160px;
+  bottom: 160px;
+}
+
+.article p {
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.article h2 {
+  font-size: 50px;
+}
+
+.cta1 a {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-left: 0;
+    color: black;
+    font-size: 19px;
+}
+
+.cta1 a:hover {
+  background-color: #E8D7FF;
+  }
+
+
+.cta2 a {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 20px 40px;
+    color: black;
+    font-size: 19px;
+    margin-left: 13%;
+}
+
+.cta2 a:hover {
+  background-color: #E8D7FF;
+}
+
+.cta3 a {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 30px 50px;
+    color: black;
+    font-size: 19px;
+}
+
+.cta3 a:hover {
+  background-color: #E8D7FF;
+}
+
+.cta4 a {
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+}
+
+.cta4 a:hover {
+  color: #DFFFD6;
+}
+
+.button {
+  border: 3px solid black;
+  background-color: #DFFFD6;
+  margin-left: 20%;
+}
+
+.button a:hover {
+  background-color: #E8D7FF;
+}
+
+.portfolio {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.title {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.slideshow {
+ justify-content: space-around;
+ margin-left: 20%;
+ display: flex;
+ width: 60%;
+ height: 60vh;
+ flex-wrap: wrap;
+}
+
+.workinprogress {
+  display: none;
+}
+
+.about {
+  background-color: #E8D7FF;
+  width: 100%;
+  height: 100vh;
+  border-radius: 30px;
+}
+
+.skills {
+  background-color: #ffffff;
+  width: 100%;
+  height: 50vh;
+}
+
+.contact {
+    background-color: #E8D7FF;
+    width: 100%;
+    height: 50vh;
+    border-radius: 30px;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction:column;
+    display: flex;
+}
+
+.contactme {
+  border: 3px solid black;
+  background-color: #DFFFD6;
+}
+
+.text {
+  margin-right: 13%;
+  margin-left: 13%;
+  font-size: 20px;
+}
+
+#mistakes {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 30px;
+}
+
+.panel {
+  margin-top: 120px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.icon {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  max-width: 60px;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  padding-bottom: 50px;
+
+}
+
+.social {
+ max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 50px 0 0 0;
+}
+
+
+.credits {
+  text-align: center;
+  padding-top: 40px;
+  letter-spacing: 1px;
+}
+
+.credits p{
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 1000px)  {
+
+  nav {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+.logo {
+  left: 5%;
+  width: 30px;
+}
+
+.menu{
+    margin-left: 15%;
+    display: inline;
+    float: right;
+  }
+
+.main {
+  height: 120vh;
+}
+
+.headline {
+  width: 100%;
+  position: relative;
+  top: 160px;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 0px;
+  float:left;
+}
+
+.image img{
+  width: 40%;
+  top: 260px;
+  bottom: 160px;
+  left: 30%;
+}
+
+.portfolio {
+  height: 80vh;
+}
+
+.article p{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 736px)  {
+
+  .menu{
+    margin-left: 10%;
+    float: right;
+  }
+
+ .menu >li{
+   padding: 8px;
+ }
+
+ .menu a {
+   font-size: 16px;
+ }
+
+.main {
+  width: 100%;
+}
+
+.headline {
+  width: 100%;
+  padding-left: 0px;
+  position: relative;
+  top: 160px;
+}
+
+.image img{
+  width: 40%;
+
+  top: 260px;
+  bottom: 160px;
+
+  align-items: center;
+}
+
+.slideshow {
+  display: none;
+}
+
+.workinprogress {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.workinprogress p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.gif {
+  width: 20px;
+  height: 20px;
+  margin-right: 130px;
+  margin-top: 20px;
+  align-self: center;
+
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#mistakes {
+  font-size: 20px;
+}
+
+.about {
+  height: 90vh;
+}
+
+.article h2 {
+  font-size: 45px;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.cta2 a {
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 16px;
+
+}
+
+.skills {
+  height: 400px;
+}
+
+.panel {
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 425px)  {
+
+.main {
+  height: 780px;
+}
+
+.menu a {
+  font-size: 16px;
+}
+
+  .image img{
+    width: 40%;
+    top: 260px;
+    bottom: 160px;
+  }
+
+.portfolio {
+  height: 550px;
+}
+
+.skills {
+  height: 300px;
+}
+
+.icon img {
+  max-width: 40px;
+}
+
+.cta3 a {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 20px 30px;
+    color: black;
+    font-size: 19px;
+}
+
+
+}
+
+@media only screen and (max-width: 375px)  {
+
+  .menu a {
+    font-size: 15px;
+  }
+
+  .menu >li{
+   padding: 5px;
+  }
+
+.article p {
+  font-size: 25px;
+}
+
+.about {
+  height: 750px;
+}
+
+.cta4 a{
+  font-size: 18px;
+
+}
+
+.credits p{
+  font-size: 17px;
+}
+
+}
